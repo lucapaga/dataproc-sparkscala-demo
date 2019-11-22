@@ -20,7 +20,8 @@ SCALA_RUNNABLE_CLASS=it.injenia.demo.dataproc.unibo.SparkWordCount
 #SCALA_JAR_FILE_FOR_JOB_SUBMIT=${SCALA_JAR_FILE_LOCALPATH}/${SCALA_JAR_FILE}
 SCALA_JAR_FILE_FOR_JOB_SUBMIT=gs://${GCS_SRC_BUCKET_NAME}/${SCALA_JAR_FILENAME}
 
-DATA_FILE=all-shakespeare-02.txt
+#DATA_FILE=all-shakespeare-02.txt
+DATA_FILE=data/shakespeare-*.txt
 
 DATAPROC_CLUSTER_NAME=unibo-dataproc-cluster-${RUN_SESSION}
 DATAPROC_CLUSTER_REGION=europe-west1
