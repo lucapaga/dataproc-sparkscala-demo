@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RUN_SESSION=20181122114000
+RUN_SESSION=20191122124000
 
 GCP_PROJECT=unibo-demo
 
@@ -13,8 +13,8 @@ GCS_SRC_BUCKET_ZONE=europe-west1
 GCS_SRC_BUCKET_CLASS=regional
 
 SCALA_JAR_FILENAME=spark-scala-dataproc-unibo-demo_2.11-1.0.0.jar
-SCALA_JAR_FILE=codebase/target/scala-2.11/${SCALA_JAR_FILENAME}
-SCALA_JAR_FILE_LOCALPATH=file://$(pwd) 
+SCALA_JAR_FILE=codebase/release/${SCALA_JAR_FILENAME}
+#SCALA_JAR_FILE_LOCALPATH=file://$(pwd) 
 SCALA_RUNNABLE_CLASS=it.injenia.demo.dataproc.unibo.SparkWordCount
 
 #SCALA_JAR_FILE_FOR_JOB_SUBMIT=${SCALA_JAR_FILE_LOCALPATH}/${SCALA_JAR_FILE}
