@@ -19,6 +19,7 @@ echo "  -> Job is: \'${DATAFLOW_JOB_NAME}\''"
 python3 -m \
     wordcount.wordcount \
     --project ${GCP_PROJECT} \
+    --region ${DATAFLOW_REGION} \
     --runner ${DATAFLOW_RUNNER} \
     --input ${DATA_FILE_URI} \
     --temp_location ${DATAFLOW_TEMP_PATH} \
