@@ -9,7 +9,7 @@ gcloud dataproc jobs submit spark \
       --region ${DATAPROC_CLUSTER_REGION} \
       --class ${SCALA_RUNNABLE_CLASS} \
       --jars ${SCALA_JAR_FILE_FOR_JOB_SUBMIT} \
-      -- gs://${GCS_BUCKET_NAME}/${DATA_FILE} \
+      -- gs://${GCS_BUCKET_NAME}/${DATA_FILE_SINGLE} \
       ${DATAPROC_OUTPUT_PATH}/
 
 ./90.log-time.sh "SPARK JOB '${SCALA_RUNNABLE_CLASS}' DONE!"
